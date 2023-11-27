@@ -166,7 +166,7 @@ const ProductCards = () => {
                 {/* ...código de otras pestañas */}
             </div>
           </Tab>
-          <Tab eventKey="profile" title="Profile">
+          <Tab eventKey="profile" title="Info">
           <p className="card-text text-left">
                                             <span className="titlecard"><span>Desc:</span>{product.name} </span>
                                             <span className="titlecard"><span>Cod:</span> {product.code}</span>
@@ -181,7 +181,7 @@ const ProductCards = () => {
                                             <span className="titlecard"><span>Cuidados:</span> None</span>
                                             <span className="titlecard"><span>Tipo:</span> PROMOCION</span>
                                             <span className="titlecard"><span>Marca:</span> {product.brand}</span>
-                                            <span className="titlecard"><font color="#FFBF00"><span>Linea:</span> CASUAL</font></span>                                      
+                                            <span className="titlecard"><font color="#FFBF00"><span>{product.type}:</span> CASUAL</font></span>                                      
                                     </p>
                                     <hr/>
                                      <p className="card-text text-left">
@@ -195,7 +195,7 @@ const ProductCards = () => {
                                             <span className="titlecard"><font color="#54BF2B"><span>Rotacion:</span> BUENA</font></span>                                      
                                     </p>
           </Tab>
-          <Tab eventKey="contact" title="Contact" >
+          <Tab eventKey="contact" title="Rotation" >
           <Table striped bordered hover size="sm">
                 <thead>
                   <tr>
@@ -214,6 +214,43 @@ const ProductCards = () => {
                   </tr>
                   <tr>
                     <td>325-Yellow</td>
+                    <td>78</td>
+                    <td>125</td>
+                    <td>89 %</td>
+                  </tr>
+                  <tr>
+                    <td>Sum</td>
+                    <td>500</td>
+                    <td>325</td>
+                    <td>AVG 72%</td>
+                  </tr>
+                </tbody>
+        </Table>
+
+        <Table striped bordered hover size="sm">
+                <thead>
+                  <tr>
+                    <th>Channel</th>
+                    <th>Sales</th>
+                    <th>Inv</th>
+                    <th>Rot</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Store</td>
+                    <td>25</td>
+                    <td>250</td>
+                    <td>75 %</td>
+                  </tr>
+                  <tr>
+                    <td>Franq</td>
+                    <td>78</td>
+                    <td>125</td>
+                    <td>89 %</td>
+                  </tr>
+                  <tr>
+                    <td>E-com</td>
                     <td>78</td>
                     <td>125</td>
                     <td>89 %</td>
