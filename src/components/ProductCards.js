@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import Table from 'react-bootstrap/Table';
 
 const ProductCards = () => {
   const [cardsPerRow, setCardsPerRow] = useState(3); // Valor predeterminado
@@ -195,68 +196,36 @@ const ProductCards = () => {
                                     </p>
           </Tab>
           <Tab eventKey="contact" title="Contact" >
-          <table className="table table-sm table-striped table-hover">
-                                        <tr>
-                                    <th scope="row" id="titulo">COLOR</th>
-                                    <th id="titulo">VTA</th>
-                                    <th id="titulo">INV</th>
-                                    <th id="titulo">ROTA</th>
-                                        </tr>
-                                        <tr>
-                                    <th>AZUL</th>
-                                    <td>1042</td>
-                                    <td>738</td>
-                                    <td>70,83%</td>
-                                        </tr>
-                                        <tr>
-                                    <th>BLANCO</th>
-                                    <td>120</td>
-                                    <td>107</td>
-                                    <td>89,17%</td>
-                                        </tr>
-                                        <tr>
-                                    <th>NEGRO</th>
-                                    <td>782</td>
-                                    <td>508</td>
-                                    <td>64,96%</td>
-                                        </tr>
-                                    </table>
-
-                                   <hr/>
-                                   
-                                    <table className="table table-sm table-striped table-hover">
-                                        <tr>
-                                    <th scope="row" id="titulo">CLIMA</th>
-                                    <th id="titulo">META</th>
-                                    <th id="titulo">VENTA</th>
-                                    <th id="titulo">CUMPL</th>
-                                        </tr>
-                                        <tr>
-                                    <th>Tiendas</th>
-                                    <td>1042</td>
-                                    <td>738</td>
-                                    <td>70,83%</td>
-                                        </tr>
-                                        <tr>
-                                    <th>Propias</th>
-                                    <td>120</td>
-                                    <td>107</td>
-                                    <td>89,17%</td>
-                                        </tr>
-                                        <tr>
-                                    <th>Franquicias</th>
-                                    <td>782</td>
-                                    <td>508</td>
-                                    <td>64,96%</td>
-                                        </tr>
-                                          <tr>
-                                    <th>Tienda Online</th>
-                                    <td>45</td>
-                                    <td>78</td>
-                                    <td>44,96%</td>
-                                        </tr>
-                                    </table>
-
+          <Table striped bordered hover size="sm">
+                <thead>
+                  <tr>
+                    <th>Color</th>
+                    <th>Sales</th>
+                    <th>Inv</th>
+                    <th>Rot</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>010-Blue</td>
+                    <td>25</td>
+                    <td>250</td>
+                    <td>75 %</td>
+                  </tr>
+                  <tr>
+                    <td>325-Yellow</td>
+                    <td>78</td>
+                    <td>125</td>
+                    <td>89 %</td>
+                  </tr>
+                  <tr>
+                    <td>Sum</td>
+                    <td>500</td>
+                    <td>325</td>
+                    <td>AVG 72%</td>
+                  </tr>
+                </tbody>
+        </Table>
           </Tab>
         </Tabs>    
         
