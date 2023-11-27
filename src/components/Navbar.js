@@ -1,15 +1,16 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Navbar = () => {
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+
+const CustomNavbar = () => {
   return (
-<nav className="navbar navbar navbar-dark bg-dark">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#"> Zaru Fashion - Product Turnover</a>
-  </div>
-</nav>
+    <Navbar bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#">Zaru Fashion - Product Turnover</Navbar.Brand>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
-
+export default CustomNavbar;
