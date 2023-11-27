@@ -49,16 +49,16 @@ function Menu({ onLogout }) {
             </NavDropdown>
             <NavDropdown title="Rotation" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">
-                Excellent > 90 %
+                Excellent `{'>'}` 90 %
               </NavDropdown.Item>
               <NavDropdown.Item href="#action4">
-                  Good > 80 %
+                  Good `{'>'}` 80 %
               </NavDropdown.Item>
               <NavDropdown.Item href="#action4">
-                  low  > 50 %
+                  low  `{'>'}` 50 %
               </NavDropdown.Item>
               <NavDropdown.Item href="#action4">
-                  deficient  > 50 %
+                  deficient `{'>'}` 50 %
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
