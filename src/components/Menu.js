@@ -6,7 +6,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logoImg from './Logo/ZF2.png'; 
 
-function NavScrollExample() {
+function Menu({ onLogout }) {
+  const handleLogout = () => {
+    // Lógica para desloguear
+    onLogout();
+  };
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
@@ -74,10 +78,13 @@ function NavScrollExample() {
             />
             <Button variant="outline-success">Search</Button>
           </Form>
+          <Button variant="outline-danger" onClick={handleLogout}>
+            Logout
+          </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
 
-export default NavScrollExample;
+export default Menu;
